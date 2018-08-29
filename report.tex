@@ -114,6 +114,11 @@ language, to the platform they will develop for, to the software being used
 to develop for it will all be completely familiar to them, and much less
 training will be required to have them integrate into the projects.
 
+Furthermore, since Java is supported many other JVM languages which easily
+interoperate with Java are also easily accessable, allowing for much greater
+flexibility than needing potentially less reliable support for allowing
+other languages of choice that match the problem domain.
+
 \subsection{Fragmentation of the hardware ecosystem}
 Not everything on Android is amazingly spectacular. The fact that nearly
 all the phones today run Android also has some drawbacks, namely that
@@ -126,7 +131,22 @@ some having the latest update, along with hundreds of different types of
 hardware running the versions of Android, with their own particular quirks
 and issues specific to them.
 
+Not only does this cause trouble for simply fixing defects that occur in
+certain versions of applications, but when developing new features all the
+old versions must also be held in account. When an API level, or specific
+software version is chosen to maintain support for, all new features must
+restrict themselves to simply the feature set found in these versions
+otherwise locking out the previous userbase from being able to continue
+using the app.
 
+That isn't to say there isn't real problems with the hardware and specific
+brands that make them up. For example, Xiaomi and One Plus are notorious
+for having hard to work with phones due to their incredibly restrictive
+specialized operating systems. They enforce much stricter app usage policies
+then the default Android operating system, and even then may implement the
+default features in different ways, causing issues to any developers who
+do not have the resources to test on the wide breadth of phones Android
+phones that exist.
 
 \section{Conclusion}
 
@@ -134,7 +154,7 @@ and issues specific to them.
 
 \begin{thebibliography}{9}
 \bibitem{marketshare}
-Don Reisinger: Apple Trails Samsung in Smartphone Market—And Won't Catch Up in 2018
+Don Reisinger: Apple Trails Samsung in Smartphone Market - And Won't Catch Up in 2018
 \\\texttt{http://fortune.com/2018/02/13/apple-iphone-samsung-market-share/}
 \bibitem{java}
 Ben Putano: Most Popular and Influential Programming Languages of 2018
